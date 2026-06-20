@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://distylta.github.io/portfolio/sitemap.xml

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="distylta - AI destekli yaratıcı tasarımlar, sosyal medya yönetimi, Meta reklam kampanyaları ve marka kimliği hizmetleri. Markanızı dijitalde öne taşıyoruz.">
+    <meta name="keywords" content="yapay zeka tasarım, AI tasarım, sosyal medya yönetimi, Meta reklam, marka kimliği, web sayfası tasarımı, distylta">
+    <meta property="og:title" content="distylta | AI Tasarım & Sosyal Medya Yönetimi">
+    <meta property="og:description" content="AI destekli yaratıcı tasarımlar, sosyal medya yönetimi ve Meta reklam kampanyalarıyla markanızı bir adım öne taşıyoruz.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="tr_TR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="distylta | AI Tasarım & Sosyal Medya Yönetimi">
+    <meta name="twitter:description" content="AI destekli yaratıcı tasarımlar, sosyal medya yönetimi ve Meta reklam kampanyalarıyla markanızı bir adım öne taşıyoruz.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+    <title>distylta | Yapay Zeka Tasarımları / Sosyal Medya & Meta Reklam Yönetimi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="tr">
+                    <svg class="lang-flag" viewBox="0 0 24 16" width="20" height="14">
+                        <rect width="24" height="16" fill="#E30A17" rx="2"/>
+                        <circle cx="9.5" cy="8" r="4.5" fill="#fff"/>
+                        <circle cx="10.8" cy="8" r="3.6" fill="#E30A17"/>
+                        <polygon points="14.5,8 13,9.1 13.4,7.4 12.2,6.3 13.9,6.2" fill="#fff"/>
+                    </svg>
+                    TR
+                </button>
+                <button class="lang-btn" data-lang="en">
+                    <svg class="lang-flag" viewBox="0 0 24 16" width="20" height="14">
+                        <rect width="24" height="16" fill="#012169" rx="2"/>
+                        <path d="M0,0 L24,16 M24,0 L0,16" stroke="#fff" stroke-width="2.8"/>
+                        <path d="M0,0 L24,16 M24,0 L0,16" stroke="#C8102E" stroke-width="1.6"/>
+                        <path d="M12,0 V16 M0,8 H24" stroke="#fff" stroke-width="4.5"/>
+                        <path d="M12,0 V16 M0,8 H24" stroke="#C8102E" stroke-width="2.5"/>
+                    </svg>
+                    EN
+                </button>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" data-i18n="nav-about">Hakkımızda</a></li>
+                <li><a href="#services" data-i18n="nav-services">Hizmetler</a></li>
+                <li><a href="#projects" data-i18n="nav-projects">Çalışmalar</a></li>
+                <li><a href="#galeri" data-i18n="nav-gallery">Galeri</a></li>
+                <li><a href="#process" data-i18n="nav-process">Süreç</a></li>
+                <li><a href="#contact" data-i18n="nav-contact">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <svg viewBox="0 0 240 58" class="hero-logo-svg" xmlns="http://www.w3.org/2000/svg">
+                    <text x="0" y="38" font-family="Inter, sans-serif" font-weight="900" font-size="42" fill="#111111" letter-spacing="-1.5">distylta</text>
+                    <text x="2" y="54" font-family="Inter, sans-serif" font-weight="600" font-size="11" fill="#8b5cf6" letter-spacing="4">ai studio</text>
+                </svg>
+            </div>
+            <h1 class="hero-title" data-i18n="hero-title">Yapay Zeka Tasarımları / Sosyal Medya & Meta Reklam Yönetimi</h1>
+            <p class="hero-desc" data-i18n="hero-desc">AI destekli yaratıcı tasarımlar, sosyal medya yönetimi ve Meta reklam
+                kampanyalarıyla markanızı bir adım öne taşıyoruz.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary" data-i18n="hero-btn">Teklif Al</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="service-cards">
+                <div class="service-card" data-service="ai">
+                    <div class="card-glow"></div>
+                    <div class="card-icon card-icon-purple">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2a10 10 0 0 1 0 20"/><path d="M12 2a10 10 0 0 0 0 20"/><path d="M2 12h20"/></svg>
+                    </div>
+                    <span class="card-title" data-i18n="sphere-ai">Yapay Zeka<br>Tasarımı</span>
+                    <span class="card-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+                    </span>
+                </div>
+                <div class="service-card" data-service="social">
+                    <div class="card-glow"></div>
+                    <div class="card-icon card-icon-orange">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5z"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </div>
+                    <span class="card-title" data-i18n="sphere-social">Sosyal Medya<br>Yönetimi</span>
+                    <span class="card-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+                    </span>
+                </div>
+                <div class="service-card" data-service="meta">
+                    <div class="card-glow"></div>
+                    <div class="card-icon card-icon-blue">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <span class="card-title" data-i18n="sphere-meta">Meta Reklam<br>Yönetimi</span>
+                    <span class="card-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+                    </span>
+                </div>
+                <a href="#galeri" class="service-card card-link">
+                    <div class="card-glow"></div>
+                    <div class="card-icon card-icon-pink">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                    </div>
+                    <span class="card-title" data-i18n="sphere-gallery">Galeri</span>
+                    <span class="card-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+                    </span>
+                </a>
+            </div>
+            <div class="service-detail" id="serviceDetail">
+                <div class="service-detail-content" id="detailAi" data-service="ai">
+                    <h3 data-i18n="detail-ai-title">Yapay Zeka Tasarımı</h3>
+                    <p data-i18n="detail-ai-desc">Uzman yapay zeka araçları ile markanıza özel AI görseller, ürün fotoğrafları ve yaratıcı tasarımlar üretiyoruz.</p>
+                    <div class="detail-tags">
+                        <span data-i18n="tag-ai-visual">AI Görsel</span><span data-i18n="tag-prompt">Prompt Engineering</span><span data-i18n="tag-product-visual">Ürün Görseli</span><span data-i18n="tag-creative">Yaratıcı Tasarım</span>
+                    </div>
+                </div>
+                <div class="service-detail-content" id="detailSocial" data-service="social">
+                    <h3 data-i18n="detail-social-title">Sosyal Medya Yönetimi</h3>
+                    <p data-i18n="detail-social-desc">Instagram ve Facebook hesaplarınızı profesyonelce yönetiyor, içerik takvimi oluşturuyor ve topluluk yönetimi yapıyoruz.</p>
+                    <div class="detail-tags">
+                        <span>Instagram</span><span>Facebook</span><span data-i18n="tag-content-plan">İçerik Planı</span><span data-i18n="tag-community">Topluluk Yönetimi</span>
+                    </div>
+                </div>
+                <div class="service-detail-content" id="detailMeta" data-service="meta">
+                    <h3 data-i18n="detail-meta-title">Meta Reklam Yönetimi</h3>
+                    <p data-i18n="detail-meta-desc">Facebook ve Instagram reklam kampanyalarınızı optimize ediyor, hedef kitle analizi ile ROAS'ınızı artırıyoruz.</p>
+                    <div class="detail-tags">
+                        <span>Facebook Ads</span><span>Instagram Ads</span><span>Retargeting</span><span data-i18n="tag-audience">Hedef Kitle</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title" data-i18n="section-about">Hakkımızda</h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-visual">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="avGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.12"/>
+                                    <stop offset="100%" stop-color="#ec4899" stop-opacity="0.06"/>
+                                </linearGradient>
+                            </defs>
+                            <rect width="200" height="200" rx="24" fill="url(#avGrad)"/>
+                            <circle cx="60" cy="70" r="18" fill="#8b5cf6" opacity="0.12"/>
+                            <circle cx="140" cy="70" r="18" fill="#f97316" opacity="0.12"/>
+                            <circle cx="100" cy="140" r="18" fill="#3b82f6" opacity="0.12"/>
+                            <text x="60" y="76" text-anchor="middle" font-family="Inter" font-size="14" font-weight="700" fill="#8b5cf6">AI</text>
+                            <text x="140" y="76" text-anchor="middle" font-family="Inter" font-size="11" font-weight="600" fill="#f97316">Social</text>
+                            <text x="100" y="146" text-anchor="middle" font-family="Inter" font-size="11" font-weight="600" fill="#3b82f6">Meta</text>
+                            <line x1="60" y1="70" x2="140" y2="70" stroke="#ccc" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/>
+                            <line x1="140" y1="70" x2="100" y2="140" stroke="#ccc" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/>
+                            <line x1="100" y1="140" x2="60" y2="70" stroke="#ccc" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p data-i18n="about-p1"><strong>distylta</strong>, yapay zeka teknolojileri ile yaratıcı tasarımı birleştiren
+                        bir ajandır. Markaların görsel kimliğini AI ile güçlendiriyor, sosyal medyada
+                        etkili varlık göstermelerini sağlıyoruz.</p>
+                    <p data-i18n="about-p2">AI görsel tasarımından sosyal medya yönetimine, Meta (Facebook & Instagram)
+                        reklam kampanyalarından marka kimliği oluşturmaya kadar geniş bir yelpazede
+                        çözümler üretiyoruz.</p>
+                    <div class="about-details">
+                        <div class="detail">
+                            <span class="detail-label" data-i18n="label-expertise">Uzmanlık</span>
+                            <span class="detail-value" data-i18n="value-expertise">AI Tasarım, Sosyal Medya, Meta Ads</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label" data-i18n="label-platforms">Platformlar</span>
+                            <span class="detail-value">Instagram, Facebook, Meta Ads</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="services">
+        <div class="container">
+            <h2 class="section-title" data-i18n="section-services">Hizmetlerimiz</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon icon-purple">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 2a10 10 0 0 1 0 20"/>
+                            <path d="M12 2a10 10 0 0 0 0 20"/>
+                            <path d="M2 12h20"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="service-ai-title">AI Görsel Tasarım</h3>
+                    <div class="skill-tags">
+                        <span data-i18n="tag-ai-visual">AI Görsel</span>
+                        <span data-i18n="tag-prompt">Prompt Engineering</span>
+                        <span data-i18n="tag-product-visual">Ürün Görseli</span>
+                        <span data-i18n="tag-creative">Yaratıcı Tasarım</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon icon-pink">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <path d="M21 15l-5-5L5 21"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="service-brand-title">Marka Kimliği & Tasarım</h3>
+                    <div class="skill-tags">
+                        <span data-i18n="tag-logo">Logo Tasarım</span>
+                        <span data-i18n="tag-corporate">Kurumsal Kimlik</span>
+                        <span data-i18n="tag-web-page">Web Sayfası</span>
+                        <span data-i18n="tag-social-visual">Sosyal Medya Görseli</span>
+                        <span>Banner</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon icon-orange">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5z"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="service-social-title">Sosyal Medya Yönetimi</h3>
+                    <div class="skill-tags">
+                        <span>Instagram</span>
+                        <span>Facebook</span>
+                        <span data-i18n="tag-content-plan">İçerik Planı</span>
+                        <span data-i18n="tag-community">Topluluk Yönetimi</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon icon-blue">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="service-meta-title">Meta Reklam Yönetimi</h3>
+                    <div class="skill-tags">
+                        <span>Facebook Ads</span>
+                        <span>Instagram Ads</span>
+                        <span data-i18n="tag-audience">Hedef Kitle</span>
+                        <span>Retargeting</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title" data-i18n="section-projects">Çalışmalarımız</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon icon-purple">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5"/>
+                                <path d="M21 15l-5-5L5 21"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 data-i18n="project-1-title">AI Ürün Görselleri - E-Ticaret Markası</h3>
+                    <p data-i18n="project-1-desc">Yapay zeka ile profesyonel ürün fotoğrafları oluşturuldu. Stüdyo maliyeti olmadan
+                        yüksek kaliteli katalog görselleri üretildi.</p>
+                    <div class="project-tags">
+                        <span data-i18n="tag-ai-visual">AI Görsel</span>
+                        <span>Midjourney</span>
+                        <span data-i18n="tag-product-photo">Ürün Fotoğrafçılığı</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon icon-orange">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5z"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 data-i18n="project-2-title">Sosyal Medya Yönetimi - Restoran Zinciri</h3>
+                    <p data-i18n="project-2-desc">3 aylık sosyal medya stratejisi ile takipçi sayısı %180 artırıldı. Haftalık içerik
+                        takvimi, AI destekli görseller ve etkileşim yönetimi.</p>
+                    <div class="project-tags">
+                        <span>Instagram</span>
+                        <span data-i18n="tag-content-strategy">İçerik Stratejisi</span>
+                        <span data-i18n="tag-ai-design">AI Tasarım</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon icon-blue">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 data-i18n="project-3-title">Meta Reklam Kampanyası - Güzellik Markası</h3>
+                    <p data-i18n="project-3-desc">Facebook ve Instagram reklam kampanyaları ile ROAS %340 artışı sağlandı.
+                        Hedef kitle optimizasyonu ile maliyet düşürüldü.</p>
+                    <div class="project-tags">
+                        <span>Meta Ads</span>
+                        <span>Facebook</span>
+                        <span>Retargeting</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon icon-pink">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 data-i18n="project-4-title">Komple Marka Kimliği - Tech Startup</h3>
+                    <p data-i18n="project-4-desc">AI ile logo, kurumsal kimlik, sosyal medya şablonları ve reklam görselleri
+                        oluşturuldu. Lansmanla birlikte dijital kampanya yönetimi yapıldı.</p>
+                    <div class="project-tags">
+                        <span data-i18n="tag-brand-identity">Marka Kimliği</span>
+                        <span data-i18n="tag-ai-design">AI Tasarım</span>
+                        <span data-i18n="tag-launch">Lansman</span>
+                        <span>Meta Ads</span>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="projects galeri-section" id="galeri">
+        <div class="container">
+            <h2 class="section-title" data-i18n="gallery-title">Galeri</h2>
+            <div class="steps-grid gallery-folders">
+                <div class="step-card gallery-card">
+                    <div class="gallery-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4" fill="#8b5cf6" opacity="0.2"/><circle cx="12" cy="13" r="4"/></svg>
+                    </div>
+                    <h3 data-i18n="folder-photos">Fotoğraflar</h3>
+                    <div class="gallery-grid" id="photoGrid">
+                    </div>
+                </div>
+                <div class="step-card gallery-card">
+                    <div class="gallery-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="1.5"><rect x="2" y="4" width="15" height="16" rx="2" fill="#ec4899" opacity="0.2"/><rect x="2" y="4" width="15" height="16" rx="2"/><polygon points="22 8 17 12 22 16 22 8"/></svg>
+                    </div>
+                    <h3 data-i18n="folder-videos">Videolar</h3>
+                    <div class="gallery-grid" id="videoGrid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="process">
+        <div class="container">
+            <h2 class="section-title" data-i18n="section-process">Nasıl Çalışıyoruz?</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3 data-i18n="step-1-title">Keşif & Analiz</h3>
+                    <p data-i18n="step-1-desc">Markanızı, hedef kitlenizi ve rakiplerinizi analiz ediyoruz.
+                        İhtiyaçlarınıza özel strateji oluşturuyoruz.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3 data-i18n="step-2-title">AI Tasarım & İçerik</h3>
+                    <p data-i18n="step-2-desc">Yapay zeka araçlarıyla markanıza özel görseller, sosyal medya içerikleri
+                        ve reklam materyalleri tasarlıyoruz.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3 data-i18n="step-3-title">Kampanya & Yayınlama</h3>
+                    <p data-i18n="step-3-desc">Meta reklam kampanyalarını kurguluyor, sosyal medya içeriklerinizi
+                        planlıyor ve yayınlıyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-i18n="section-contact">İletişim</h2>
+            <p class="contact-desc" data-i18n="contact-desc">Markanız için AI tasarım, sosyal medya veya Meta reklam desteği mi istiyorsunuz? Hemen ulaşın.</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <div>
+                            <span class="contact-label" data-i18n="contact-email-label">E-posta</span>
+                            <a href="mailto:haticeurgcc@gmail.com">haticeurgcc@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5z"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                        <div>
+                            <span class="contact-label">Instagram</span>
+                            <a href="https://instagram.com/distylta" target="_blank">@distylta</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" action="https://formsubmit.co/haticeurgcc@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="distylta - Yeni İletişim Formu Mesajı">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" id="formNext" value="">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" data-i18n-ph="ph-name" placeholder="Adınız" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" data-i18n-ph="ph-email" placeholder="E-posta adresiniz" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" rows="5" data-i18n-ph="ph-message" placeholder="Mesajınız" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" data-i18n="btn-send">Gönder</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer">&copy; 2026 distylta. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

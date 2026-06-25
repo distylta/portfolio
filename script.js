@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    activateService('ai');
+    activateService('social');
 
     const fadeEls = document.querySelectorAll(
         '.skill-category, .project-card, .step-card, .about-grid, .contact-grid, .gallery-card, .service-card'
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'stat-clients': 'Mutlu Müşteri',
             'stat-designs': 'AI Tasarım',
             'stat-campaigns': 'Reklam Kampanyası',
-            'sphere-ai': 'Yapay Zeka<br>Tasarımı',
+            'sphere-ai': 'AI<br>Tasarımlar',
             'sphere-social': 'Sosyal Medya<br>Yönetimi',
             'sphere-meta': 'Meta Reklam<br>Yönetimi',
             'sphere-google': 'Google Reklam<br>Yönetimi',
@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'stat-clients': 'Happy Clients',
             'stat-designs': 'AI Designs',
             'stat-campaigns': 'Ad Campaigns',
-            'sphere-ai': 'AI<br>Design',
+            'sphere-ai': 'AI<br>Designs',
             'sphere-social': 'Social Media<br>Management',
             'sphere-meta': 'Meta Ad<br>Management',
             'sphere-google': 'Google Ad<br>Management',

@@ -277,9 +277,6 @@ h1.hero-title {
     max-width: 340px;
 }
 
-.service-cards .card-link {
-    grid-column: span 2;
-}
 
 .service-card {
     position: relative;
@@ -329,7 +326,7 @@ h1.hero-title {
 .service-card[data-service="ai"] .card-glow { background: radial-gradient(circle, rgba(139,92,246,0.08) 0%, transparent 70%); }
 .service-card[data-service="social"] .card-glow { background: radial-gradient(circle, rgba(249,115,22,0.08) 0%, transparent 70%); }
 .service-card[data-service="meta"] .card-glow { background: radial-gradient(circle, rgba(59,130,246,0.08) 0%, transparent 70%); }
-.service-card[data-service="google"] .card-glow { background: radial-gradient(circle, rgba(16,185,129,0.08) 0%, transparent 70%); }
+.service-card[data-service="ads"] .card-glow { background: radial-gradient(circle, rgba(59,130,246,0.08) 0%, transparent 70%); }
 .service-card.card-link .card-glow { background: radial-gradient(circle, rgba(236,72,153,0.08) 0%, transparent 70%); }
 
 .service-card[data-service="ai"] {
@@ -365,15 +362,15 @@ h1.hero-title {
     border-color: var(--blue);
 }
 
-.service-card[data-service="google"] {
-    background: linear-gradient(135deg, rgba(16,185,129,0.06), rgba(16,185,129,0.02));
-    border-color: rgba(16,185,129,0.15);
+.service-card[data-service="ads"] {
+    background: linear-gradient(135deg, rgba(59,130,246,0.06), rgba(16,185,129,0.02));
+    border-color: rgba(59,130,246,0.15);
 }
-.service-card[data-service="google"]:hover,
-.service-card[data-service="google"].active {
-    background: linear-gradient(135deg, rgba(16,185,129,0.12), rgba(16,185,129,0.04));
-    box-shadow: 0 12px 32px rgba(16, 185, 129, 0.18);
-    border-color: var(--green);
+.service-card[data-service="ads"]:hover,
+.service-card[data-service="ads"].active {
+    background: linear-gradient(135deg, rgba(59,130,246,0.12), rgba(16,185,129,0.04));
+    box-shadow: 0 12px 32px rgba(59, 130, 246, 0.18);
+    border-color: var(--blue);
 }
 
 .service-card.card-link {
@@ -445,8 +442,8 @@ h1.hero-title {
 .service-card[data-service="social"].active .card-arrow svg { stroke: var(--orange); }
 .service-card[data-service="meta"]:hover .card-arrow svg,
 .service-card[data-service="meta"].active .card-arrow svg { stroke: var(--blue); }
-.service-card[data-service="google"]:hover .card-arrow svg,
-.service-card[data-service="google"].active .card-arrow svg { stroke: var(--green); }
+.service-card[data-service="ads"]:hover .card-arrow svg,
+.service-card[data-service="ads"].active .card-arrow svg { stroke: var(--blue); }
 .service-card.card-link:hover .card-arrow svg { stroke: var(--pink); }
 
 .service-detail {

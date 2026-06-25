@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav-gallery': 'Galeri',
             'nav-process': 'Süreç',
             'nav-contact': 'İletişim',
-            'hero-title': 'Sosyal Medya / Meta Ads / Google Ads Yönetimi / AI Tasarımlar',
+            'hero-title': 'Sosyal Medya / Meta Ads / Google Ads / AI Tasarımlar',
             'hero-desc': 'AI destekli yaratıcı tasarımlar, sosyal medya yönetimi, Meta ve Google Ads kampanyalarıyla markanızı bir adım öne taşıyoruz.',
             'hero-btn': 'Teklif Al',
             'stat-clients': 'Mutlu Müşteri',

@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'ph-name': 'Adınız',
             'ph-email': 'E-posta adresiniz',
             'ph-message': 'Mesajınız',
-            'page-title': 'distylta | Yapay Zeka Tasarımları / Sosyal Medya & Meta & Google Reklam Yönetimi'
+            'page-title': 'distylta | Yapay Zeka Tasarımları — Sosyal Medya & Reklam Yönetimi'
         },
         en: {
             'nav-about': 'About Us',
@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'stat-campaigns': 'Ad Campaigns',
             'sphere-ai': 'AI<br>Designs',
             'sphere-social': 'Social Media<br>Management',
-            'sphere-ads': 'Meta & Google<br>Reklam Yönetimi',
+            'sphere-ads': 'Meta & Google<br>Ad Management',
             'sphere-gallery': 'Gallery',
             'detail-ai-title': 'AI Design',
             'detail-ai-desc': 'We create custom AI visuals, product photos and creative designs for your brand using expert AI tools.',
@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'ph-name': 'Your Name',
             'ph-email': 'Your Email',
             'ph-message': 'Your Message',
-            'page-title': 'distylta | AI Designs / Social Media & Meta & Google Ad Management'
+            'page-title': 'distylta | AI Designs — Social Media & Ad Management'
         }
     };
 

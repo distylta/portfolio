@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    activateService('social');
+    activateService('ai');
 
     const fadeEls = document.querySelectorAll(
         '.skill-category, .project-card, .step-card, .about-grid, .contact-grid, .gallery-card, .service-card'

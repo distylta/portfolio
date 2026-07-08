@@ -251,16 +251,16 @@ h1.hero-title {
 }
 
 .btn-whatsapp {
-    background: #e11d2e;
+    background: #25d366;
     color: white;
     gap: 8px;
-    box-shadow: 0 4px 14px rgba(225, 29, 46, 0.3);
+    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
 }
 
 .btn-whatsapp:hover {
-    background: #c81726;
+    background: #1ebe59;
     transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(225, 29, 46, 0.4);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
 }
 
 .btn-outline {

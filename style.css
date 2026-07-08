@@ -192,9 +192,12 @@ body {
     margin-top: 20px;
 }
 
-.hero-logo-svg {
+.hero-logo-img {
+    display: block;
     width: 240px;
-    height: 58px;
+    height: 131px;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 .hero-title,
@@ -1000,7 +1003,7 @@ h1.hero-title {
         margin: 0 auto;
     }
 
-    .hero-logo-svg { width: 200px; height: 50px; }
+    .hero-logo-img { width: 200px; height: 110px; }
 
     .about-grid {
         grid-template-columns: 1fr;
@@ -1035,7 +1038,7 @@ h1.hero-title {
     .nav-toggle { display: flex; }
     .lang-btn { font-size: 0.78rem; padding: 3px 8px; }
     .lang-flag { width: 16px !important; height: 11px !important; }
-    .hero-logo-svg { width: 180px; height: 44px; }
+    .hero-logo-img { width: 180px; height: 99px; }
     .hero-title { font-size: 0.95rem; }
     .hero-desc { font-size: 0.88rem; }
     .skills-grid { grid-template-columns: 1fr; }
@@ -1060,7 +1063,7 @@ h1.hero-title {
 @media (max-width: 400px) {
     .container { padding: 0 16px; }
     .hero { padding: 74px 16px 30px; }
-    .hero-logo-svg { width: 160px; height: 40px; }
+    .hero-logo-img { width: 160px; height: 88px; }
     .hero-title { font-size: 0.88rem; }
     .section-title { font-size: 1.2rem; }
     .service-card { padding: 14px 10px 12px; }

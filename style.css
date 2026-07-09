@@ -263,6 +263,10 @@ h1.hero-title {
     box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
 }
 
+.detail-whatsapp {
+    margin-top: 16px;
+}
+
 .btn-outline {
     background: white;
     color: var(--purple);

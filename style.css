@@ -984,6 +984,14 @@ h1.hero-title {
     font-size: 0.78rem;
 }
 
+.footer-links-link {
+    display: inline-block;
+    margin-top: 6px;
+    color: var(--text-lighter);
+    font-size: 0.78rem;
+    text-decoration: underline;
+}
+
 /* ===================== ANIMATIONS ===================== */
 .fade-in {
     opacity: 0;

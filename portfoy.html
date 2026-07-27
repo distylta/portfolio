@@ -151,6 +151,20 @@
             gap: 16px;
         }
 
+        .work-item {
+            aspect-ratio: 4/5;
+            border-radius: 14px;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .work-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
         .work-placeholder {
             aspect-ratio: 4/5;
             background: var(--bg-alt);
@@ -273,9 +287,8 @@
                 <span data-lang-content="en">Our Work</span>
             </h2>
             <div class="work-grid" id="workGrid">
-                <div class="work-placeholder">
-                    <span data-lang-content="tr" class="active">Örnek çalışma yakında eklenecek</span>
-                    <span data-lang-content="en">Work sample coming soon</span>
+                <div class="work-item">
+                    <video src="assets/work-1.mp4" controls playsinline preload="metadata"></video>
                 </div>
                 <div class="work-placeholder">
                     <span data-lang-content="tr" class="active">Örnek çalışma yakında eklenecek</span>

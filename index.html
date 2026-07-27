@@ -446,6 +446,7 @@
                     </div>
                     <h3 data-i18n="folder-photos">Fotoğraflar</h3>
                     <div class="gallery-grid" id="photoGrid">
+                        <img src="assets/work-15.jpg" data-full="assets/work-15.jpg" data-type="image" alt="distylta çalışma örneği">
                     </div>
                 </div>
                 <div class="step-card gallery-card">
@@ -454,6 +455,20 @@
                     </div>
                     <h3 data-i18n="folder-videos">Videolar</h3>
                     <div class="gallery-grid" id="videoGrid">
+                        <img src="assets/work-2-poster.jpg" data-full="assets/work-2.mp4" data-type="video" alt="distylta çalışma örneği">
+                        <img src="assets/work-3-poster.jpg" data-full="assets/work-3.mp4" data-type="video" alt="distylta çalışma örneği">
+                        <img src="assets/work-4-poster.jpg" data-full="assets/work-4.mp4" data-type="video" alt="distylta çalışma örneği">
+                        <img src="assets/work-5-poster.jpg" data-full="assets/work-5.mp4" data-type="video" alt="distylta çalışma örneği">
+                        <img src="assets/work-6-poster.jpg" data-full="assets/work-6.mp4" data-type="video" alt="distylta çalışma örneği">
+                        <img src="assets/work-7-poster.jpg" data-full="assets/work-7.mp4" data-type="video" alt="distylta çalışma örneği">
+                        <img src="assets/work-8-poster.jpg" data-full="assets/work-8.mp4" data-type="video" alt="distylta çalışma örneği">
+                        <img src="assets/work-9-poster.jpg" data-full="assets/work-9.mp4" data-type="video" alt="distylta çalışma örneği">
+                        <img src="assets/work-10-poster.jpg" data-full="assets/work-10.mp4" data-type="video" alt="distylta çalışma örneği">
+                        <img src="assets/work-11-poster.jpg" data-full="assets/work-11.mp4" data-type="video" alt="distylta çalışma örneği">
+                        <img src="assets/work-12-poster.jpg" data-full="assets/work-12.mp4" data-type="video" alt="distylta çalışma örneği">
+                        <img src="assets/work-13-poster.jpg" data-full="assets/work-13.mp4" data-type="video" alt="distylta çalışma örneği">
+                        <img src="assets/work-14-poster.jpg" data-full="assets/work-14.mp4" data-type="video" alt="distylta çalışma örneği">
+                        <img src="assets/work-16-poster.jpg" data-full="assets/work-16.mp4" data-type="video" alt="distylta çalışma örneği">
                     </div>
                 </div>
                 <div class="step-card gallery-card">
@@ -550,6 +565,56 @@
         </div>
     </footer>
 
+    <div class="gallery-lightbox" id="galleryLightbox">
+        <div class="gallery-lightbox-inner">
+            <button class="gallery-lightbox-close" id="galleryLightboxClose">&times;</button>
+            <video id="galleryLightboxVideo" controls playsinline></video>
+            <img id="galleryLightboxImg" style="display:none;">
+        </div>
+    </div>
+
     <script src="script.js"></script>
+    <script>
+        (function () {
+            const lightbox = document.getElementById('galleryLightbox');
+            const lightboxVideo = document.getElementById('galleryLightboxVideo');
+            const lightboxImg = document.getElementById('galleryLightboxImg');
+
+            function openGalleryLightbox(el) {
+                const type = el.dataset.type;
+                const full = el.dataset.full;
+                if (type === 'video') {
+                    lightboxVideo.src = full;
+                    lightboxVideo.style.display = 'block';
+                    lightboxImg.style.display = 'none';
+                    lightboxVideo.play();
+                } else {
+                    lightboxImg.src = full;
+                    lightboxImg.style.display = 'block';
+                    lightboxVideo.style.display = 'none';
+                }
+                lightbox.classList.add('active');
+            }
+
+            function closeGalleryLightbox() {
+                lightbox.classList.remove('active');
+                lightboxVideo.pause();
+                lightboxVideo.removeAttribute('src');
+                lightboxVideo.load();
+            }
+
+            document.querySelectorAll('#photoGrid img, #videoGrid img, #animationGrid img').forEach(img => {
+                img.addEventListener('click', () => openGalleryLightbox(img));
+            });
+
+            document.getElementById('galleryLightboxClose').addEventListener('click', closeGalleryLightbox);
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) closeGalleryLightbox();
+            });
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') closeGalleryLightbox();
+            });
+        })();
+    </script>
 </body>
 </html>

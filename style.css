@@ -808,6 +808,50 @@ h1.hero-title {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
+.gallery-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.92);
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.gallery-lightbox.active {
+    display: flex;
+}
+
+.gallery-lightbox-inner {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.gallery-lightbox-inner video,
+.gallery-lightbox-inner img {
+    display: block;
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 14px;
+}
+
+.gallery-lightbox-close {
+    position: absolute;
+    top: -44px;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: var(--purple);
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
 .gallery-grid video {
     width: 100%;
     aspect-ratio: 16 / 9;

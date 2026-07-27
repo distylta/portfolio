@@ -356,9 +356,36 @@
         [data-lang-content] { display: none; }
         [data-lang-content].active { display: block; }
         span[data-lang-content].active { display: inline; }
+
+        .music-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: var(--dark);
+            color: var(--gold);
+            border: 1px solid var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 500;
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+
+        .music-toggle.playing {
+            background: var(--gold);
+            color: var(--dark);
+        }
     </style>
 </head>
 <body>
+    <audio id="themeMusic" src="assets/theme-music.mp3" loop preload="auto"></audio>
+    <button class="music-toggle" id="musicToggle" aria-label="Müzik">♪</button>
+
     <div class="lang-switcher">
         <button class="lang-btn active" data-lang="tr">TR</button>
         <button class="lang-btn" data-lang="en">EN</button>
@@ -533,6 +560,34 @@
     </div>
 
     <script>
+        const themeMusic = document.getElementById('themeMusic');
+        const musicToggle = document.getElementById('musicToggle');
+
+        function setPlayingState(isPlaying) {
+            musicToggle.classList.toggle('playing', isPlaying);
+        }
+
+        function startMusicOnInteraction() {
+            themeMusic.play().then(() => setPlayingState(true)).catch(() => {});
+            document.removeEventListener('click', startMusicOnInteraction);
+            document.removeEventListener('touchstart', startMusicOnInteraction);
+        }
+
+        themeMusic.play().then(() => setPlayingState(true)).catch(() => {
+            document.addEventListener('click', startMusicOnInteraction, { once: true });
+            document.addEventListener('touchstart', startMusicOnInteraction, { once: true });
+        });
+
+        musicToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (themeMusic.paused) {
+                themeMusic.play().then(() => setPlayingState(true)).catch(() => {});
+            } else {
+                themeMusic.pause();
+                setPlayingState(false);
+            }
+        });
+
         ['workCol1', 'workCol2', 'workCol3'].forEach(id => {
             const col = document.getElementById(id);
             if (col) col.innerHTML += col.innerHTML;

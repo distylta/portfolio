@@ -212,6 +212,52 @@
             border-radius: 14px;
             overflow: hidden;
             background: #000;
+            cursor: pointer;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(10, 8, 6, 0.92);
+            z-index: 999;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-inner {
+            position: relative;
+            max-width: 90vw;
+            max-height: 90vh;
+        }
+
+        .lightbox-inner video,
+        .lightbox-inner img {
+            display: block;
+            max-width: 90vw;
+            max-height: 90vh;
+            border-radius: 14px;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -44px;
+            right: 0;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: none;
+            background: var(--gold);
+            color: var(--dark);
+            font-size: 1.2rem;
+            line-height: 1;
+            cursor: pointer;
         }
 
         .work-item video,
@@ -426,10 +472,62 @@
 
     <footer>&copy; 2026 distylta</footer>
 
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-inner">
+            <button class="lightbox-close" id="lightboxClose">&times;</button>
+            <video id="lightboxVideo" controls playsinline></video>
+            <img id="lightboxImg" style="display:none;">
+        </div>
+    </div>
+
     <script>
         ['workCol1', 'workCol2', 'workCol3'].forEach(id => {
             const col = document.getElementById(id);
             if (col) col.innerHTML += col.innerHTML;
+        });
+
+        const lightbox = document.getElementById('lightbox');
+        const lightboxVideo = document.getElementById('lightboxVideo');
+        const lightboxImg = document.getElementById('lightboxImg');
+
+        function openLightbox(item) {
+            const video = item.querySelector('video');
+            const img = item.querySelector('img');
+            if (video) {
+                lightboxVideo.src = video.currentSrc || video.src;
+                lightboxVideo.style.display = 'block';
+                lightboxVideo.muted = false;
+                lightboxVideo.currentTime = 0;
+                lightboxImg.style.display = 'none';
+                lightboxVideo.play();
+            } else if (img) {
+                lightboxImg.src = img.src;
+                lightboxImg.style.display = 'block';
+                lightboxVideo.style.display = 'none';
+            }
+            lightbox.classList.add('active');
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            lightboxVideo.pause();
+            lightboxVideo.removeAttribute('src');
+            lightboxVideo.load();
+        }
+
+        document.querySelectorAll('.work-col').forEach(col => {
+            col.addEventListener('click', (e) => {
+                const item = e.target.closest('.work-item');
+                if (item) openLightbox(item);
+            });
+        });
+
+        document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
         });
 
         document.querySelectorAll('.lang-btn').forEach(btn => {

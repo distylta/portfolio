@@ -14,11 +14,13 @@
 
         :root {
             --gold: #c9a227;
+            --gold-light: #e0c04a;
+            --dark: #1a1512;
             --text: #1a1512;
             --text-light: #6b5f55;
-            --bg: #ffffff;
-            --bg-alt: #faf8f5;
-            --border: #ece7e0;
+            --bg: #fbf7f1;
+            --bg-alt: #f2e6d3;
+            --border: #e6dac4;
             --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
@@ -85,6 +87,17 @@
             width: 100%;
             display: block;
             border-radius: 8px;
+            box-shadow: 0 0 0 3px var(--bg), 0 0 0 4px var(--gold);
+        }
+
+        .hero-eyebrow {
+            display: block;
+            color: var(--gold);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            margin-bottom: 14px;
         }
 
         .hero h1 {
@@ -109,10 +122,22 @@
         }
 
         .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
             font-size: 1.4rem;
             font-weight: 700;
             margin-bottom: 28px;
             letter-spacing: -0.01em;
+        }
+
+        .section-title::before {
+            content: "";
+            width: 28px;
+            height: 3px;
+            border-radius: 2px;
+            background: var(--gold);
+            flex-shrink: 0;
         }
 
         /* Services */
@@ -174,7 +199,7 @@
         .work-placeholder {
             aspect-ratio: 4/5;
             background: var(--bg-alt);
-            border: 1px dashed var(--border);
+            border: 1.5px dashed var(--gold);
             border-radius: 14px;
             display: flex;
             align-items: center;
@@ -188,10 +213,18 @@
         /* CTA */
         .cta {
             text-align: center;
+            background: var(--dark);
+            border-top: none;
+            color: #f5f1ea;
+        }
+
+        .cta .section-title {
+            justify-content: center;
+            color: #fff;
         }
 
         .cta p {
-            color: var(--text-light);
+            color: #c9beac;
             margin-bottom: 24px;
         }
 
@@ -199,8 +232,8 @@
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            background: var(--text);
-            color: #fff;
+            background: var(--gold);
+            color: var(--dark);
             text-decoration: none;
             padding: 14px 28px;
             border-radius: 999px;
@@ -210,14 +243,15 @@
         }
 
         .btn-whatsapp:hover {
-            background: var(--gold);
+            background: var(--gold-light);
         }
 
         footer {
             text-align: center;
             padding: 32px 24px 48px;
-            color: var(--text-light);
+            color: #9a8f80;
             font-size: 0.8rem;
+            background: var(--dark);
         }
 
         [data-lang-content] { display: none; }
@@ -235,6 +269,7 @@
         <div class="hero-logo">
             <img src="assets/distylta-logo.jpg" alt="distylta">
         </div>
+        <span class="hero-eyebrow">distylta</span>
         <h1>
             <span data-lang-content="tr" class="active">Yapay Zeka Destekli Tasarım Stüdyosu</span>
             <span data-lang-content="en">AI-Powered Creative Studio</span>

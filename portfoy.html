@@ -417,8 +417,7 @@
                 <span data-lang-content="en">Hello, I'm Hatice Urgaç, an AI-based content creator from Türkiye. I offer services tailored to your industry. Simply send me your product image and I'll prepare photo and video shoots in the concept you want. I'd love to work with you — feel free to reach out for a demo shoot.</span>
             </p>
             <p class="about-contact">
-                <span data-lang-content="tr" class="active">Telefon: </span>
-                <span data-lang-content="en">Phone: </span>
+                <span>WhatsApp: </span>
                 <a href="https://wa.me/905412944694" target="_blank" rel="noopener">+90 541 294 46 94</a>
                 &nbsp;·&nbsp;
                 <span data-lang-content="tr" class="active">Instagram: </span>
@@ -597,9 +596,16 @@
         const lightboxVideo = document.getElementById('lightboxVideo');
         const lightboxImg = document.getElementById('lightboxImg');
 
+        let wasThemeMusicPlaying = false;
+
         function openLightbox(item) {
             const video = item.querySelector('video');
             const img = item.querySelector('img');
+
+            wasThemeMusicPlaying = !themeMusic.paused;
+            themeMusic.pause();
+            setPlayingState(false);
+
             if (video) {
                 lightboxVideo.src = video.currentSrc || video.src;
                 lightboxVideo.style.display = 'block';
@@ -620,6 +626,10 @@
             lightboxVideo.pause();
             lightboxVideo.removeAttribute('src');
             lightboxVideo.load();
+
+            if (wasThemeMusicPlaying) {
+                themeMusic.play().then(() => setPlayingState(true)).catch(() => {});
+            }
         }
 
         document.querySelectorAll('.work-col').forEach(col => {

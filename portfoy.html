@@ -176,38 +176,43 @@
         }
 
         /* Work samples */
-        .work-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        .work-marquee {
+            overflow: hidden;
+            -webkit-mask-image: linear-gradient(90deg, transparent, #000 40px, #000 calc(100% - 40px), transparent);
+            mask-image: linear-gradient(90deg, transparent, #000 40px, #000 calc(100% - 40px), transparent);
+        }
+
+        .work-track {
+            display: flex;
             gap: 16px;
+            width: max-content;
+            animation: workScroll 50s linear infinite;
+        }
+
+        .work-track:hover {
+            animation-play-state: paused;
         }
 
         .work-item {
+            flex: 0 0 auto;
+            width: 200px;
             aspect-ratio: 4/5;
             border-radius: 14px;
             overflow: hidden;
             background: #000;
         }
 
-        .work-item video {
+        .work-item video,
+        .work-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             display: block;
         }
 
-        .work-placeholder {
-            aspect-ratio: 4/5;
-            background: var(--bg-alt);
-            border: 1.5px dashed var(--gold);
-            border-radius: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-light);
-            font-size: 0.82rem;
-            text-align: center;
-            padding: 16px;
+        @keyframes workScroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
         }
 
         /* CTA */
@@ -286,48 +291,53 @@
                 <span data-lang-content="tr" class="active">Çalışmalarımız</span>
                 <span data-lang-content="en">Our Work</span>
             </h2>
-            <div class="work-grid" id="workGrid">
-                <div class="work-item">
-                    <video src="assets/work-1.mp4" controls playsinline preload="metadata"></video>
-                </div>
-                <div class="work-item">
-                    <video src="assets/work-2.mp4" controls playsinline preload="metadata"></video>
-                </div>
-                <div class="work-item">
-                    <video src="assets/work-3.mp4" controls playsinline preload="metadata"></video>
-                </div>
-                <div class="work-item">
-                    <video src="assets/work-4.mp4" controls playsinline preload="metadata"></video>
-                </div>
-                <div class="work-item">
-                    <video src="assets/work-5.mp4" controls playsinline preload="metadata"></video>
-                </div>
-                <div class="work-item">
-                    <video src="assets/work-6.mp4" controls playsinline preload="metadata"></video>
-                </div>
-                <div class="work-item">
-                    <video src="assets/work-7.mp4" controls playsinline preload="metadata"></video>
-                </div>
-                <div class="work-item">
-                    <video src="assets/work-8.mp4" controls playsinline preload="metadata"></video>
-                </div>
-                <div class="work-item">
-                    <video src="assets/work-9.mp4" controls playsinline preload="metadata"></video>
-                </div>
-                <div class="work-item">
-                    <video src="assets/work-10.mp4" controls playsinline preload="metadata"></video>
-                </div>
-                <div class="work-item">
-                    <video src="assets/work-11.mp4" controls playsinline preload="metadata"></video>
-                </div>
-                <div class="work-item">
-                    <video src="assets/work-12.mp4" controls playsinline preload="metadata"></video>
-                </div>
-                <div class="work-item">
-                    <video src="assets/work-13.mp4" controls playsinline preload="metadata"></video>
-                </div>
-                <div class="work-item">
-                    <video src="assets/work-14.mp4" controls playsinline preload="metadata"></video>
+            <div class="work-marquee">
+                <div class="work-track" id="workTrack">
+                    <div class="work-item">
+                        <video src="assets/work-1.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                    </div>
+                    <div class="work-item">
+                        <video src="assets/work-2.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                    </div>
+                    <div class="work-item">
+                        <video src="assets/work-3.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                    </div>
+                    <div class="work-item">
+                        <video src="assets/work-4.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                    </div>
+                    <div class="work-item">
+                        <video src="assets/work-5.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                    </div>
+                    <div class="work-item">
+                        <video src="assets/work-6.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                    </div>
+                    <div class="work-item">
+                        <video src="assets/work-7.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                    </div>
+                    <div class="work-item">
+                        <video src="assets/work-8.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                    </div>
+                    <div class="work-item">
+                        <video src="assets/work-9.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                    </div>
+                    <div class="work-item">
+                        <video src="assets/work-10.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                    </div>
+                    <div class="work-item">
+                        <video src="assets/work-11.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                    </div>
+                    <div class="work-item">
+                        <video src="assets/work-12.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                    </div>
+                    <div class="work-item">
+                        <video src="assets/work-13.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                    </div>
+                    <div class="work-item">
+                        <video src="assets/work-14.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                    </div>
+                    <div class="work-item">
+                        <img src="assets/work-15.jpg" alt="distylta çalışma örneği">
+                    </div>
                 </div>
             </div>
         </div>
@@ -395,6 +405,11 @@
     <footer>&copy; 2026 distylta</footer>
 
     <script>
+        const workTrack = document.getElementById('workTrack');
+        if (workTrack) {
+            workTrack.innerHTML += workTrack.innerHTML;
+        }
+
         document.querySelectorAll('.lang-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 const lang = btn.dataset.lang;

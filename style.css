@@ -19,6 +19,8 @@
     --green-bg: rgba(16, 185, 129, 0.08);
     --red: #ef4444;
     --red-bg: rgba(239, 68, 68, 0.08);
+    --gold: #c9a227;
+    --gold-bg: rgba(201, 162, 39, 0.08);
     --text: #111111;
     --text-light: #555555;
     --text-lighter: #999999;
@@ -339,7 +341,7 @@ h1.hero-title {
 .service-card[data-service="social"] .card-glow { background: radial-gradient(circle, rgba(249,115,22,0.08) 0%, transparent 70%); }
 .service-card[data-service="meta"] .card-glow { background: radial-gradient(circle, rgba(59,130,246,0.08) 0%, transparent 70%); }
 .service-card[data-service="ads"] .card-glow { background: radial-gradient(circle, rgba(59,130,246,0.08) 0%, transparent 70%); }
-.service-card.card-link .card-glow { background: radial-gradient(circle, rgba(236,72,153,0.08) 0%, transparent 70%); }
+.service-card.card-link .card-glow { background: radial-gradient(circle, rgba(201,162,39,0.08) 0%, transparent 70%); }
 
 .service-card[data-service="ai"] {
     background: linear-gradient(135deg, rgba(139,92,246,0.06), rgba(139,92,246,0.02));
@@ -382,13 +384,13 @@ h1.hero-title {
 }
 
 .service-card.card-link {
-    background: linear-gradient(135deg, rgba(236,72,153,0.06), rgba(236,72,153,0.02));
-    border-color: rgba(236,72,153,0.15);
+    background: linear-gradient(135deg, rgba(201,162,39,0.06), rgba(201,162,39,0.02));
+    border-color: rgba(201,162,39,0.15);
 }
 .service-card.card-link:hover {
-    background: linear-gradient(135deg, rgba(236,72,153,0.12), rgba(236,72,153,0.04));
-    box-shadow: 0 12px 32px rgba(236, 72, 153, 0.18);
-    border-color: var(--pink);
+    background: linear-gradient(135deg, rgba(201,162,39,0.12), rgba(201,162,39,0.04));
+    box-shadow: 0 12px 32px rgba(201, 162, 39, 0.18);
+    border-color: var(--gold);
 }
 
 .card-icon {
@@ -410,8 +412,8 @@ h1.hero-title {
 .card-icon-purple { background: linear-gradient(135deg, #8b5cf6, #7c3aed); box-shadow: 0 6px 16px rgba(139, 92, 246, 0.3); }
 .card-icon-orange { background: linear-gradient(135deg, #f97316, #ea580c); box-shadow: 0 6px 16px rgba(249, 115, 22, 0.3); }
 .card-icon-blue { background: linear-gradient(135deg, #3b82f6, #2563eb); box-shadow: 0 6px 16px rgba(59, 130, 246, 0.3); }
-.card-icon-pink { background: linear-gradient(135deg, #ec4899, #db2777); box-shadow: 0 6px 16px rgba(236, 72, 153, 0.3); }
 .card-icon-green { background: linear-gradient(135deg, #10b981, #059669); box-shadow: 0 6px 16px rgba(16, 185, 129, 0.3); }
+.card-icon-gold { background: linear-gradient(135deg, #c9a227, #e0c04a); box-shadow: 0 6px 16px rgba(201, 162, 39, 0.3); }
 
 .card-title {
     font-size: 0.82rem;
@@ -443,7 +445,7 @@ h1.hero-title {
 .service-card[data-service="social"]:hover .card-arrow svg { stroke: var(--orange); }
 .service-card[data-service="meta"]:hover .card-arrow svg { stroke: var(--blue); }
 .service-card[data-service="ads"]:hover .card-arrow svg { stroke: var(--blue); }
-.service-card.card-link:hover .card-arrow svg { stroke: var(--pink); }
+.service-card.card-link:hover .card-arrow svg { stroke: var(--gold); }
 
 /* ===================== SECTIONS ===================== */
 .section-title {

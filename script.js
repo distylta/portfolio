@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'ph-name': 'Adınız',
             'ph-email': 'E-posta adresiniz',
             'ph-message': 'Mesajınız',
-            'page-title': 'distylta | Yapay Zeka Destekli Tasarım ve Web Stüdyosu'
+            'page-title': 'distylta | Yapay Zeka Destekli Tasarım/Web Stüdyosu'
         },
         en: {
             'nav-about': 'About Us',
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav-gallery': 'Gallery',
             'nav-process': 'Process',
             'nav-contact': 'Contact',
-            'hero-title': 'AI-Powered Design and Web Studio',
+            'hero-title': 'AI-Powered Design/Web Studio',
             'hero-desc': 'From photo, video and animation design to websites and digital automation — every project your brand needs to grow, in one place.',
             'hero-btn-whatsapp': 'Get Info',
             'stat-clients': 'Happy Clients',
@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'ph-name': 'Your Name',
             'ph-email': 'Your Email',
             'ph-message': 'Your Message',
-            'page-title': 'distylta | AI-Powered Design and Web Studio'
+            'page-title': 'distylta | AI-Powered Design/Web Studio'
         },
         ar: {
             'nav-about': 'نبذة عنا',
@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav-gallery': 'المعرض',
             'nav-process': 'آلية العمل',
             'nav-contact': 'تواصل معنا',
-            'hero-title': 'استوديو التصميم والويب المدعوم بالذكاء الاصطناعي',
+            'hero-title': 'استوديو التصميم/الويب المدعوم بالذكاء الاصطناعي',
             'hero-desc': 'من تصميم الصور والفيديو والرسوم المتحركة إلى مواقع الويب وحلول الأتمتة الرقمية — كل ما تحتاجه علامتكم التجارية للنمو، في مكان واحد.',
             'hero-btn-whatsapp': 'اطلب معلومات',
             'stat-clients': 'عميل سعيد',
@@ -357,7 +357,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'ph-name': 'الاسم',
             'ph-email': 'البريد الإلكتروني',
             'ph-message': 'رسالتك',
-            'page-title': 'distylta | استوديو التصميم والويب المدعوم بالذكاء الاصطناعي'
+            'page-title': 'distylta | استوديو التصميم/الويب المدعوم بالذكاء الاصطناعي'
         }
     };
 

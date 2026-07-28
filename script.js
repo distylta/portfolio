@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'ph-name': 'Adınız',
             'ph-email': 'E-posta adresiniz',
             'ph-message': 'Mesajınız',
-            'page-title': 'distylta | Yapay Zeka Tasarımları — Sosyal Medya & Reklam Yönetimi'
+            'page-title': 'distylta | Yapay Zeka Tasarımları'
         },
         en: {
             'nav-about': 'About Us',
@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'ph-name': 'Your Name',
             'ph-email': 'Your Email',
             'ph-message': 'Your Message',
-            'page-title': 'distylta | AI Designs — Social Media & Ad Management'
+            'page-title': 'distylta | AI Designs'
         },
         ar: {
             'nav-about': 'نبذة عنا',
@@ -357,7 +357,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'ph-name': 'الاسم',
             'ph-email': 'البريد الإلكتروني',
             'ph-message': 'رسالتك',
-            'page-title': 'distylta | تصاميم بالذكاء الاصطناعي — إدارة السوشيال ميديا والإعلانات'
+            'page-title': 'distylta | تصاميم بالذكاء الاصطناعي'
         }
     };
 

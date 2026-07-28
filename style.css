@@ -278,6 +278,16 @@ h1.hero-title {
     box-shadow: 0 6px 20px rgba(214, 36, 159, 0.4);
 }
 
+.btn-portfolio {
+    background: linear-gradient(135deg, var(--gold), #e0c04a);
+    box-shadow: 0 4px 14px rgba(201, 162, 39, 0.3);
+}
+
+.btn-portfolio:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(201, 162, 39, 0.4);
+}
+
 .btn-whatsapp:hover {
     background: #1ebe59;
     transform: translateY(-1px);

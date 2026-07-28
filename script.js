@@ -32,27 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    const spheres = document.querySelectorAll('.service-card[data-service]');
-    const details = document.querySelectorAll('.service-detail-content');
-
-    function activateService(service) {
-        document.querySelectorAll('.service-card').forEach(s => s.classList.toggle('active', s.dataset.service === service));
-        details.forEach(d => {
-            d.classList.remove('active');
-            if (d.dataset.service === service) {
-                d.classList.add('active');
-            }
-        });
-    }
-
-    spheres.forEach(sphere => {
-        sphere.addEventListener('click', () => {
-            activateService(sphere.dataset.service);
-        });
-    });
-
-    activateService('ai');
-
     const fadeEls = document.querySelectorAll(
         '.skill-category, .project-card, .step-card, .about-grid, .contact-grid, .gallery-card, .service-card'
     );
@@ -100,12 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
             'sphere-social': 'Sosyal Medya<br>Yönetimi',
             'sphere-ads': 'Meta & Google<br>Reklam Yönetimi',
             'sphere-gallery': 'Galeri',
-            'detail-ai-title': 'Yapay Zeka Tasarımı',
-            'detail-ai-desc': 'Uzman yapay zeka araçları ile markanıza özel AI görseller, ürün fotoğrafları ve yaratıcı tasarımlar üretiyoruz.',
-            'detail-social-title': 'Sosyal Medya Yönetimi',
-            'detail-social-desc': 'Instagram ve Facebook hesaplarınızı profesyonelce yönetiyor, içerik takvimi oluşturuyor ve topluluk yönetimi yapıyoruz.',
-            'detail-ads-title': 'Meta Ads & Google Ads Yönetimi',
-            'detail-ads-desc': 'Facebook, Instagram ve Google reklam kampanyalarınızı optimize ediyor, hedef kitle analizi ile ROAS\'ınızı ve trafiğinizi artırıyoruz.',
             'tag-ai-visual': 'AI Görsel',
             'tag-prompt': 'Prompt Engineering',
             'tag-product-visual': 'Ürün Görseli',
@@ -192,12 +165,6 @@ document.addEventListener('DOMContentLoaded', () => {
             'sphere-social': 'Social Media<br>Management',
             'sphere-ads': 'Meta & Google<br>Ad Management',
             'sphere-gallery': 'Gallery',
-            'detail-ai-title': 'AI Design',
-            'detail-ai-desc': 'We create custom AI visuals, product photos and creative designs for your brand using expert AI tools.',
-            'detail-social-title': 'Social Media Management',
-            'detail-social-desc': 'We professionally manage your Instagram and Facebook accounts, create content calendars and handle community management.',
-            'detail-ads-title': 'Meta Ads & Google Ads Management',
-            'detail-ads-desc': 'We optimize your Facebook, Instagram and Google ad campaigns, increasing your ROAS and traffic with target audience analysis.',
             'tag-ai-visual': 'AI Visual',
             'tag-prompt': 'Prompt Engineering',
             'tag-product-visual': 'Product Visual',
@@ -284,12 +251,6 @@ document.addEventListener('DOMContentLoaded', () => {
             'sphere-social': 'إدارة<br>وسائل التواصل',
             'sphere-ads': 'إدارة إعلانات<br>ميتا وجوجل',
             'sphere-gallery': 'المعرض',
-            'detail-ai-title': 'تصميم بالذكاء الاصطناعي',
-            'detail-ai-desc': 'نبتكر تصاميم بصرية وصور منتجات وتصاميم إبداعية مخصصة لعلامتكم التجارية باستخدام أدوات الذكاء الاصطناعي المتخصصة.',
-            'detail-social-title': 'إدارة وسائل التواصل الاجتماعي',
-            'detail-social-desc': 'ندير حسابات إنستغرام وفيسبوك الخاصة بكم باحترافية، ونضع خطط محتوى دورية، ونتولى إدارة التفاعل مع المتابعين.',
-            'detail-ads-title': 'إدارة إعلانات ميتا وجوجل',
-            'detail-ads-desc': 'نعمل على تحسين حملاتكم الإعلانية على فيسبوك وإنستغرام وجوجل، ونرفع عائد الإنفاق الإعلاني وحركة الزيارات من خلال تحليل الجمهور المستهدف.',
             'tag-ai-visual': 'تصميم بالذكاء الاصطناعي',
             'tag-prompt': 'هندسة الأوامر',
             'tag-product-visual': 'صورة منتج',

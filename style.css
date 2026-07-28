@@ -204,8 +204,8 @@ body {
 .hero-title,
 h1.hero-title {
     font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--purple);
+    font-weight: 700;
+    color: var(--text);
     margin-bottom: 14px;
     line-height: 1.5;
 }
@@ -494,7 +494,7 @@ h1.hero-title {
     font-size: 0.95rem;
     font-weight: 700;
     margin-bottom: 6px;
-    color: var(--purple);
+    color: var(--text);
 }
 
 .service-detail-content p {

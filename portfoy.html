@@ -185,14 +185,18 @@
             line-height: 1.5;
         }
 
-        .service-item .dot {
-            display: inline-block;
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background: var(--gold);
-            margin-bottom: 12px;
+        .service-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 14px;
         }
+
+        .service-icon svg { width: 19px; height: 19px; stroke: var(--dark); }
 
         /* Work samples */
         .work-rows {
@@ -458,32 +462,32 @@
             </h2>
             <div class="services-grid">
                 <div class="service-item">
-                    <span class="dot"></span>
+                    <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
                     <h3><span data-lang-content="tr" class="active">AI Fotoğraf/Video Tasarımı</span><span data-lang-content="en">AI Photo/Video Design</span><span data-lang-content="ar">تصميم صور/فيديو بالذكاء الاصطناعي</span></h3>
                     <p><span data-lang-content="tr" class="active">Markanıza özel yapay zeka ile üretilmiş görseller ve videolar.</span><span data-lang-content="en">Custom AI-generated visuals and videos for your brand.</span><span data-lang-content="ar">صور وفيديوهات مصممة بالذكاء الاصطناعي خصيصاً لعلامتكم التجارية.</span></p>
                 </div>
                 <div class="service-item">
-                    <span class="dot"></span>
+                    <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
                     <h3><span data-lang-content="tr" class="active">Animasyon Tasarım</span><span data-lang-content="en">Animation Design</span><span data-lang-content="ar">تصميم الرسوم المتحركة</span></h3>
                     <p><span data-lang-content="tr" class="active">Stilize, dikkat çekici animasyon içerikleri.</span><span data-lang-content="en">Stylized, eye-catching animated content.</span><span data-lang-content="ar">محتوى رسوم متحركة مميز وجذاب.</span></p>
                 </div>
                 <div class="service-item">
-                    <span class="dot"></span>
+                    <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"/></svg></div>
                     <h3><span data-lang-content="tr" class="active">Web Sitesi</span><span data-lang-content="en">Website</span><span data-lang-content="ar">تصميم مواقع الويب</span></h3>
                     <p><span data-lang-content="tr" class="active">Modern, hızlı ve markanızı yansıtan web siteleri.</span><span data-lang-content="en">Modern, fast websites that reflect your brand.</span><span data-lang-content="ar">مواقع ويب حديثة وسريعة تعكس هوية علامتكم التجارية.</span></p>
                 </div>
                 <div class="service-item">
-                    <span class="dot"></span>
+                    <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
                     <h3><span data-lang-content="tr" class="active">Sosyal Medya Yönetimi</span><span data-lang-content="en">Social Media Management</span><span data-lang-content="ar">إدارة وسائل التواصل الاجتماعي</span></h3>
                     <p><span data-lang-content="tr" class="active">İçerik planı, paylaşım ve topluluk yönetimi.</span><span data-lang-content="en">Content planning, posting and community management.</span><span data-lang-content="ar">خطة محتوى، نشر وإدارة تفاعل المتابعين.</span></p>
                 </div>
                 <div class="service-item">
-                    <span class="dot"></span>
+                    <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
                     <h3><span data-lang-content="tr" class="active">Meta & Google Reklam Yönetimi</span><span data-lang-content="en">Meta & Google Ads Management</span><span data-lang-content="ar">إدارة إعلانات ميتا وجوجل</span></h3>
                     <p><span data-lang-content="tr" class="active">Hedef kitle odaklı, ölçülebilir reklam kampanyaları.</span><span data-lang-content="en">Audience-focused, measurable ad campaigns.</span><span data-lang-content="ar">حملات إعلانية قابلة للقياس وموجهة للجمهور المستهدف.</span></p>
                 </div>
                 <div class="service-item">
-                    <span class="dot"></span>
+                    <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
                     <h3><span data-lang-content="tr" class="active">Otomasyon/Dijital Ürünler</span><span data-lang-content="en">Automation/Digital Products</span><span data-lang-content="ar">الأتمتة/المنتجات الرقمية</span></h3>
                     <p><span data-lang-content="tr" class="active">İş süreçlerinizi kolaylaştıran dijital çözümler.</span><span data-lang-content="en">Digital solutions that simplify your workflow.</span><span data-lang-content="ar">حلول رقمية تُسهّل سير عملكم.</span></p>
                 </div>

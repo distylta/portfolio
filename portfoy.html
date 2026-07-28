@@ -48,6 +48,9 @@
         }
 
         .lang-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
             border: 1px solid var(--border);
             background: var(--bg);
             color: var(--text-light);
@@ -58,6 +61,12 @@
             border-radius: 999px;
             cursor: pointer;
             transition: var(--transition);
+        }
+
+        .lang-flag {
+            flex-shrink: 0;
+            border-radius: 2px;
+            overflow: hidden;
         }
 
         .lang-btn.active {
@@ -119,8 +128,8 @@
         }
 
         .social-icon {
-            width: 46px;
-            height: 46px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -130,7 +139,7 @@
         }
 
         .social-icon:hover { transform: translateY(-3px); }
-        .social-icon svg { width: 22px; height: 22px; stroke: white; }
+        .social-icon svg { width: 18px; height: 18px; stroke: white; }
         .icon-whatsapp { background: linear-gradient(135deg, #25d366, #1ebe59); }
         .icon-ig { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
 
@@ -354,9 +363,34 @@
 </head>
 <body>
     <div class="lang-switcher">
-        <button class="lang-btn active" data-lang="tr">TR</button>
-        <button class="lang-btn" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="ar">AR</button>
+        <button class="lang-btn active" data-lang="tr">
+            <svg class="lang-flag" viewBox="0 0 24 16" width="20" height="14">
+                <rect width="24" height="16" fill="#E30A17" rx="2"/>
+                <circle cx="9.5" cy="8" r="4.5" fill="#fff"/>
+                <circle cx="10.8" cy="8" r="3.6" fill="#E30A17"/>
+                <polygon points="14.5,8 13,9.1 13.4,7.4 12.2,6.3 13.9,6.2" fill="#fff"/>
+            </svg>
+            TR
+        </button>
+        <button class="lang-btn" data-lang="en">
+            <svg class="lang-flag" viewBox="0 0 24 16" width="20" height="14">
+                <rect width="24" height="16" fill="#012169" rx="2"/>
+                <path d="M0,0 L24,16 M24,0 L0,16" stroke="#fff" stroke-width="2.8"/>
+                <path d="M0,0 L24,16 M24,0 L0,16" stroke="#C8102E" stroke-width="1.6"/>
+                <path d="M12,0 V16 M0,8 H24" stroke="#fff" stroke-width="4.5"/>
+                <path d="M12,0 V16 M0,8 H24" stroke="#C8102E" stroke-width="2.5"/>
+            </svg>
+            EN
+        </button>
+        <button class="lang-btn" data-lang="ar">
+            <svg class="lang-flag" viewBox="0 0 24 16" width="20" height="14">
+                <rect width="24" height="16" fill="#fff"/>
+                <rect y="0" width="24" height="5.33" fill="#00732F"/>
+                <rect y="10.67" width="24" height="5.33" fill="#000"/>
+                <rect width="7" height="16" fill="#FF0000"/>
+            </svg>
+            AR
+        </button>
     </div>
 
     <section class="hero" style="border-top:none;">

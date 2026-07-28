@@ -259,6 +259,26 @@ h1.hero-title {
     box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
 }
 
+.btn-icon {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.btn-icon svg { stroke: white; }
+
+.btn-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    box-shadow: 0 4px 14px rgba(214, 36, 159, 0.3);
+}
+
+.btn-instagram:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(214, 36, 159, 0.4);
+}
+
 .btn-whatsapp:hover {
     background: #1ebe59;
     transform: translateY(-1px);

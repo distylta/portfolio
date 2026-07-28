@@ -198,7 +198,7 @@ body {
     height: clamp(90px, 8vw + 60px, 130px);
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1), 0 0 0 3px var(--bg), 0 0 0 4px #c9a227;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1), 0 0 0 3px #c9a227;
 }
 
 .hero-title,

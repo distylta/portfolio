@@ -22,8 +22,8 @@
     --text: #111111;
     --text-light: #555555;
     --text-lighter: #999999;
-    --bg: #ffffff;
-    --bg-alt: #fafafa;
+    --bg: #f5ead9;
+    --bg-alt: #eddcc0;
     --border: #eeeeee;
     --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -288,6 +288,16 @@ h1.hero-title {
     box-shadow: 0 6px 20px rgba(201, 162, 39, 0.4);
 }
 
+.btn-links {
+    background: #111111;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.btn-links:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
 .btn-whatsapp:hover {
     background: #1ebe59;
     transform: translateY(-1px);

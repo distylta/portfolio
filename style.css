@@ -381,6 +381,7 @@ h1.hero-title {
 .service-card[data-service="meta"] .card-glow { background: radial-gradient(circle, rgba(59,130,246,0.08) 0%, transparent 70%); }
 .service-card[data-service="ads"] .card-glow { background: radial-gradient(circle, rgba(59,130,246,0.08) 0%, transparent 70%); }
 .service-card.card-link .card-glow { background: radial-gradient(circle, rgba(201,162,39,0.08) 0%, transparent 70%); }
+.service-card[data-service="invoice"] .card-glow { background: radial-gradient(circle, rgba(16,185,129,0.08) 0%, transparent 70%); }
 
 .service-card[data-service="ai"] {
     background: linear-gradient(135deg, rgba(139,92,246,0.06), rgba(139,92,246,0.02));
@@ -430,6 +431,22 @@ h1.hero-title {
     background: linear-gradient(135deg, rgba(201,162,39,0.12), rgba(201,162,39,0.04));
     box-shadow: 0 12px 32px rgba(201, 162, 39, 0.18);
     border-color: var(--gold);
+}
+
+.service-card[data-service="invoice"] {
+    background: linear-gradient(135deg, rgba(16,185,129,0.06), rgba(16,185,129,0.02));
+    border-color: rgba(16,185,129,0.15);
+}
+.service-card[data-service="invoice"]:hover {
+    background: linear-gradient(135deg, rgba(16,185,129,0.12), rgba(16,185,129,0.04));
+    box-shadow: 0 12px 32px rgba(16, 185, 129, 0.18);
+    border-color: var(--green);
+}
+
+.service-card-wide {
+    grid-column: span 2;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .card-icon {
@@ -485,6 +502,7 @@ h1.hero-title {
 .service-card[data-service="meta"]:hover .card-arrow svg { stroke: var(--blue); }
 .service-card[data-service="ads"]:hover .card-arrow svg { stroke: var(--blue); }
 .service-card.card-link:hover .card-arrow svg { stroke: var(--gold); }
+.service-card[data-service="invoice"]:hover .card-arrow svg { stroke: var(--green); }
 
 /* ===================== SECTIONS ===================== */
 .section-title {
@@ -797,9 +815,9 @@ h1.hero-title {
 
 .steps-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 14px;
-    max-width: 780px;
+    max-width: 940px;
     margin: 0 auto;
 }
 

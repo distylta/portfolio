@@ -597,6 +597,7 @@ h1.hero-title {
 .icon-blue { background: linear-gradient(135deg, #3b82f6, #2563eb); }
 .icon-green { background: linear-gradient(135deg, #10b981, #059669); }
 .icon-red { background: linear-gradient(135deg, #ef4444, #dc2626); }
+.icon-gold { background: linear-gradient(135deg, #c9a227, #e0c04a); }
 
 .skill-category h3 {
     font-size: 0.94rem;

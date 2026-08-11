@@ -222,6 +222,7 @@ h1.hero-title {
 
 .hero-buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 32px;
 }
@@ -278,6 +279,29 @@ h1.hero-title {
     box-shadow: 0 6px 20px rgba(214, 36, 159, 0.4);
 }
 
+.btn-instagram-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 40px;
+    padding: 0 16px 0 14px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    box-shadow: 0 4px 14px rgba(214, 36, 159, 0.3);
+    transition: var(--transition);
+}
+
+.btn-instagram-pill svg { stroke: white; }
+
+.btn-instagram-pill:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(214, 36, 159, 0.4);
+}
+
 .btn-portfolio {
     background: linear-gradient(135deg, var(--gold), #e0c04a);
     box-shadow: 0 4px 14px rgba(201, 162, 39, 0.3);
@@ -296,6 +320,17 @@ h1.hero-title {
 .btn-links:hover {
     transform: translateY(-1px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+.btn-telegram {
+    background: #26A5E4;
+    box-shadow: 0 4px 14px rgba(38, 165, 228, 0.3);
+}
+
+.btn-telegram:hover {
+    background: #1e8fc9;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(38, 165, 228, 0.4);
 }
 
 .btn-whatsapp:hover {

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
   <rect width="400" height="400" fill="#f5ead9"/>
-  <text x="200" y="210" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="150" fill="#1a1512" letter-spacing="-22">7k</text>
-  <rect x="140" y="242" width="120" height="3" fill="#c9a227"/>
-  <text x="200" y="280" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="20" fill="#1a1512" letter-spacing="2">DİJİTAL PAZARLAMA</text>
+  <text x="200" y="210" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" font-size="150" fill="#4a4038" letter-spacing="-20">7k</text>
+  <rect x="140" y="242" width="120" height="3" fill="#d4b06a"/>
+  <text x="200" y="280" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="600" font-size="20" fill="#4a4038" letter-spacing="2">DİJİTAL PAZARLAMA</text>
 </svg>

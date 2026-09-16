@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'tag-budget-opt': 'Bütçe Optimizasyonu',
             'tag-reporting': 'Raporlama',
             'section-about': 'Hakkımızda',
-            'about-p1': '<strong>distylta</strong>, markaların sosyal medyada etkili bir varlık göstermesini ve Meta & Google reklam kampanyalarıyla büyümesini sağlayan bir ajanstır.',
+            'about-p1': '<strong>7K Dijital Pazarlama</strong>, Hatice Urgaç tarafından yönetilen; markaların sosyal medyada etkili bir varlık göstermesini ve Meta & Google reklam kampanyalarıyla büyümesini sağlayan bir ajanstır.',
             'about-p2': 'Sosyal medya yönetiminden Meta & Google reklam kampanyalarına, web sitenizden marka kimliği oluşturmaya kadar geniş bir yelpazede çözümler üretiyoruz.',
             'section-services': 'Hizmetlerimiz',
             'service-web-title': 'Web Sitesi',
@@ -103,11 +103,11 @@ document.addEventListener('DOMContentLoaded', () => {
             'contact-email-label': 'E-posta',
             'contact-ig-anim-label': 'Instagram (Animasyon)',
             'btn-send': 'Gönder',
-            'footer': '&copy; 2026 distylta. Tüm hakları saklıdır.',
+            'footer': '&copy; 2026 7K Dijital Pazarlama. Tüm hakları saklıdır.',
             'ph-name': 'Adınız',
             'ph-email': 'E-posta adresiniz',
             'ph-message': 'Mesajınız',
-            'page-title': 'distylta | Sosyal Medya, Meta & Google Reklam Yönetimi'
+            'page-title': '7K Dijital Pazarlama | Sosyal Medya, Meta & Google Reklam Yönetimi'
         },
         en: {
             'nav-about': 'About Us',
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'tag-budget-opt': 'Budget Optimization',
             'tag-reporting': 'Reporting',
             'section-about': 'About Us',
-            'about-p1': '<strong>distylta</strong> is an agency that helps brands build an effective social media presence and grow through Meta & Google ad campaigns.',
+            'about-p1': '<strong>7K Dijital Pazarlama</strong>, led by Hatice Urgaç, is an agency that helps brands build an effective social media presence and grow through Meta & Google ad campaigns.',
             'about-p2': 'We provide solutions across a wide range from social media management to Meta & Google ad campaigns, from your website to brand identity creation.',
             'section-services': 'Our Services',
             'service-web-title': 'Website',
@@ -150,11 +150,11 @@ document.addEventListener('DOMContentLoaded', () => {
             'contact-email-label': 'Email',
             'contact-ig-anim-label': 'Instagram (Animation)',
             'btn-send': 'Send',
-            'footer': '&copy; 2026 distylta. All rights reserved.',
+            'footer': '&copy; 2026 7K Dijital Pazarlama. All rights reserved.',
             'ph-name': 'Your Name',
             'ph-email': 'Your Email',
             'ph-message': 'Your Message',
-            'page-title': 'distylta | Social Media, Meta & Google Ads Management'
+            'page-title': '7K Dijital Pazarlama | Social Media, Meta & Google Ads Management'
         },
         ar: {
             'nav-about': 'نبذة عنا',
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'tag-budget-opt': 'تحسين الميزانية',
             'tag-reporting': 'تقارير الأداء',
             'section-about': 'نبذة عنا',
-            'about-p1': '<strong>distylta</strong> وكالة تساعد العلامات التجارية على بناء حضور فعّال في وسائل التواصل الاجتماعي والنمو من خلال حملات إعلانات ميتا وجوجل.',
+            'about-p1': '<strong>7K Dijital Pazarlama</strong>، بقيادة Hatice Urgaç، وكالة تساعد العلامات التجارية على بناء حضور فعّال في وسائل التواصل الاجتماعي والنمو من خلال حملات إعلانات ميتا وجوجل.',
             'about-p2': 'نقدّم حلولاً متكاملة تمتد من إدارة وسائل التواصل الاجتماعي إلى حملات إعلانات ميتا وجوجل، ومن موقعكم الإلكتروني إلى بناء الهوية التجارية.',
             'section-services': 'خدماتنا',
             'service-web-title': 'تصميم مواقع الويب',
@@ -197,11 +197,11 @@ document.addEventListener('DOMContentLoaded', () => {
             'contact-email-label': 'البريد الإلكتروني',
             'contact-ig-anim-label': 'إنستغرام (الرسوم المتحركة)',
             'btn-send': 'إرسال',
-            'footer': '&copy; 2026 distylta. جميع الحقوق محفوظة.',
+            'footer': '&copy; 2026 7K Dijital Pazarlama. جميع الحقوق محفوظة.',
             'ph-name': 'الاسم',
             'ph-email': 'البريد الإلكتروني',
             'ph-message': 'رسالتك',
-            'page-title': 'distylta | إدارة السوشيال ميديا وإعلانات ميتا وجوجل'
+            'page-title': '7K Dijital Pazarlama | إدارة السوشيال ميديا وإعلانات ميتا وجوجل'
         }
     };
 

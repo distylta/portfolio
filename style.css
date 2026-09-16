@@ -253,6 +253,15 @@ h1.hero-title {
     box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
 }
 
+.btn-cta {
+    gap: 8px;
+    font-size: 0.95rem;
+    padding: 13px 26px;
+    margin-bottom: 18px;
+}
+
+.btn-cta svg { stroke: white; }
+
 .btn-whatsapp {
     background: #25d366;
     color: white;
@@ -864,6 +873,10 @@ h1.hero-title {
     height: 20px;
     stroke: var(--purple);
     flex-shrink: 0;
+}
+
+.contact-item svg.contact-icon-fill {
+    fill: var(--purple);
 }
 
 .contact-label {
